@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header>
-		<a href = "../Index.html" >
+		<a href = "../index.html" >
 			<img src= "../imagenes/logo.jpg" alt = "Inicio">
 			</a>
 		<h1>Enciclopedia Médica Universidad de Alicante</h1>
@@ -14,15 +14,26 @@
     <h2>Formulario buscador de la Enclopedia</h2>
     
     <form action= "respuesta_form_buscador.html" method = "post">
+		<p>El siguiente formulario sirve para que usted navegue por la enciclopedia de una manera más personalizada y técnica. </p>
+      <h4>Intrucciones para el relleno de los campos.</h4>
+      <ol> 
+      <li>Los campos que son obligatorios, es decir, aquellos que debes completar para poder enviar el formulario vienen 
+      indicados con el símbolo del asterisco <strong>(*).</strong></li>
+      <li>En los campos que tengan un recuadro blanco, usted puede redactar texto relacionado con lo que se pida
+       en la etiqueta que aparece junto a ese recuadro.</li>
+      <li>Aquellos en los que el asterisco no aparezca son opcionales, usted decide si los desea rellenar.</li> 
+	  <li>Para marcar los síntomas, seleccione tantos como considere.</li> 
+      <li>En el desplegable de las expectativas, usted seleccionará una única opción.</li>
+      </ol>
 		
-		<p> <label for="descripcion">Descripción de la enfermedad: </label>
+		<p> <label for="descripcion">-Descripción de la enfermedad</label>
 		<input type="textarea" name="descripcion" id="descripcion" required> </p>
 		
-		<p> <label for="causas">Causas de la enfermedad: </label>
-		<input type="text" name="causas" id="causas" required> </p>
+		<p> <label for="causas">-Causas de la enfermedad</label>
+		<input type="text" name="causas" id="causas" ></p>
 		
 		<p>
-			<label for="sintomas">Sintomas (selecciona los que coincidan):</label>
+			<label for="sintomas">-Síntomas:</label>
 			<fieldset>
             
 
@@ -62,15 +73,15 @@
         </fieldset>
 		</p>
 		
-		<p> <label for="pcr">Detectable con PCR </label>
+		<p> <label for="pcr">-Detectable con PCR </label>
 		<input type="checkbox" name="pcr" id="pcr"> </p>
 		
 		
-		<p> <label for="tratamiento">Haz una breve descripcion del tratamiento</label>
+		<p> <label for="tratamiento">-Realice una breve descripción del tratamiento</label>
 		<input type="textarea" name="tratamiento" id="tratamiento"> </p>
 		
 		<p>
-			<label>Expectativas (selecciona la más acorde):</label>
+			<label>-Expectativas (seleccione la más acorde):</label>
 			<select name="expectativas" id="expectativas">
 				<option value="opcion1">Recuperación rápida sin tratamiento</option>
 				<option value="opcion2">Recuperación rápida con tratamiento</option>

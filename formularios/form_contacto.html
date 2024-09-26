@@ -23,7 +23,7 @@
       <li>Aquellos en los que el asterisco no aparezca son opcionales, usted decide si los desea rellenar.</li> 
       <li>El campo del correo electrónico, en caso de rellenarlo, solo permitirá el envío del formulario si es completado con una 
       dirección válida, con el <strong>@ </strong>característico de las direcciones de correo electrónico.</li>
-      <li>En los desplegables o botones, usted seleccionará una única opción.</li>
+      <li>En los desplegables (Yo soy) o botones (sexo), usted seleccionará una única opción.</li>
       <li>Para recibir más información, basta con hacer click en la casilla.</li>
       </ol>
     <form action= "respuesta_form_contacto.html" method = "post">
@@ -31,8 +31,8 @@
 		<p> <label for="asunto">-Asunto <strong>*</strong></label>
 		<input type="text" name="asunto" id="asunto" required> </p>
 		
-		<p> <label for="comment">-Comentario o Pregunta <strong>*.</strong></label>
-		<input type="textarea" name="comment" id="comment" required> </p>
+		<p> <label for="comment">-Comentario o Pregunta <strong>*</strong></label>
+		<textarea id="comment" name="comment" required></textarea></p>
 		
 		<p>
 			<label for="opciones">-Yo soy:</label>
@@ -63,7 +63,7 @@
 		<input type="email" name="correo" id="correo"> </p>
 		
 		<p> <input type="checkbox" id="info" name="info" value="info">
-		<label for="info">Deseo recibir más información.</label><br>  </p>
+		<label for="info">Deseo recibir más información.</label><br></p>
 		
 		<input type="submit" value="Enviar">
     

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Buscador-Enciclopedia Medica Universidad de Alicante</title>
+</head>
+<body>
+	<header>
+		<a href = "../Index.html" >
+			<img src= "../imagenes/logo.jpg" alt = "Inicio">
+			</a>
+		<h1>Enciclopedia Médica Universidad de Alicante</h1>
+    </header>
+    <h2>Formulario buscador de la Enclopedia</h2>
+    
+    <form action= "respuesta_form_buscador.html" method = "post">
+		
+		<p> <label for="descripcion">Descripción de la enfermedad: </label>
+		<input type="textarea" name="descripcion" id="descripcion" required> </p>
+		
+		<p> <label for="causas">Causas de la enfermedad: </label>
+		<input type="text" name="causas" id="causas" required> </p>
+		
+		<p>
+			<label for="sintomas">Sintomas (selecciona los que coincidan):</label>
+			<fieldset>
+            
+
+            <input type="checkbox" id="fiebre" name="fiebre" value="fiebre">
+            <label for="fiebre">Fiebre</label><br>
+
+            <input type="checkbox" id="tos" name="tos" value="tos">
+            <label for="tos">Tos</label><br>
+
+            <input type="checkbox" id="dificultad_respirar" name="dificultad _respirar" value="dificultad_respirar">
+            <label for="dificultad_respirar">Dificultad para respirar (disnea)</label><br>
+
+            <input type="checkbox" id="fatiga" name="fatiga" value="fatiga">
+            <label for="fatiga">Fatiga</label><br>
+
+            <input type="checkbox" id="dolores_musculares" name="dolores_musculares" value="dolores_musculares">
+            <label for="dolores_musculares">Dolores musculares o corporales</label><br>
+
+            <input type="checkbox" id="dolor_cabeza" name="dolor_cabeza" value="dolor_cabeza">
+            <label for="dolor_cabeza">Dolor de cabeza</label><br>
+
+            <input type="checkbox" id="perdida_go" name="perdida_go" value="perdida_go">
+            <label for="perdida_go">Pérdida del gusto o del olfato</label><br>
+
+            <input type="checkbox" id="dolor_garganta" name="dolor_garganta" value="dolor_garganta">
+            <label for="dolor_garganta">Dolor de garganta</label><br>
+
+            <input type="checkbox" id="congestion_nasal" name="congestion_nasal" value="congestion_nasal">
+            <label for="congestion_nasal">Congestión o secreción nasal</label><br>
+
+            <input type="checkbox" id="nauseas_vomitos" name="nauseas_vomitos" value="nauseas_vomitos">
+            <label for="nauseas_vomitos">Náuseas o vómitos</label><br>
+
+            <input type="checkbox" id="diarrea" name="diarrea" value="diarrea">
+            <label for="diarrea">Diarrea</label><br><br>
+
+        </fieldset>
+		</p>
+		
+		<p> <label for="pcr">Detectable con PCR </label>
+		<input type="checkbox" name="pcr" id="pcr"> </p>
+		
+		
+		<p> <label for="tratamiento">Haz una breve descripcion del tratamiento</label>
+		<input type="textarea" name="tratamiento" id="tratamiento"> </p>
+		
+		<p>
+			<label>Expectativas (selecciona la más acorde):</label>
+			<select name="expectativas" id="expectativas">
+				<option value="opcion1">Recuperación rápida sin tratamiento</option>
+				<option value="opcion2">Recuperación rápida con tratamiento</option>
+				<option value="opcion3">Recuperación lenta con tratamiento</option>
+				<option value="opcion4">Tratamientos paliativos con amplia esperanza de vida</option>
+				<option value="opcion5">Tratamientos paliativos sin deseable esperanza de vida</option>
+				<option value="opcion6">Enfermedad sin cura encontrada</option>
+			</select>  </p>
+		
+		<input type="submit" value="Enviar">
+    
+    </form>
+
+
+    <footer><p><em>Página realizada por Francisco Giménez De La Torre y Román Bono Esteve.</em></p></footer>
+    
+</body>
+</html>

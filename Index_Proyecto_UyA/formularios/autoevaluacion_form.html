@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enciclopedia Medica Universidad de Alicante</title>
+</head>
+<body>
+	<header>
+		<a href = "../index.html" >
+			<img src= "../imagenes/logo.jpg" alt = "Inicio">
+			</a>
+		<h1>Enciclopedia Médica Universidad de Alicante</h1>
+    </header>
+    <h2>Formulario de autoevaluación sobre salud del usuario.</h2>
+    <main>
+	 <form action= "respuesta_autoevaluacion.html" method = "get">
+		  <p>El siguiente formulario sirve para que usted pueda tener una percepción sobre el estado de salud en el que se encuentra actualmente. </p>
+		  <h4>Intrucciones para el relleno de los campos.</h4>
+		  <ol> 
+		  <li>Los campos que son obligatorios, es decir, aquellos que debes completar para poder enviar el formulario vienen 
+		  indicados con el símbolo del asterisco <strong>(*).</strong></li>
+		  <li>En los campos que tengan un recuadro blanco, usted puede redactar texto relacionado con lo que se pida
+		   en la etiqueta que aparece junto a ese recuadro.</li>
+		  <li>Aquellos en los que el asterisco no aparezca son opcionales, usted decide si los desea rellenar.</li> 
+		  <li>Para el campo de la actividad física, seleccione en la paleta de colores su nivel de actividad.
+		   <strong>Azul</strong> indica moderado,<strong> Verde </strong>buen nivel de actividad y <strong>Rojo </strong>nivel de actividad pobre.</li>
+		  <li>El campo del correo electrónico, en caso de rellenarlo, solo permitirá el envío del formulario si es completado con una 
+			dirección válida, con el <strong>@ </strong>característico de las direcciones de correo electrónico.</li>
+		  <li>En los desplegables (Tabaquismo) o botones (sexo), usted seleccionará una única opción.</li>
+		  <li>El número de teléfono solo acepta el formato español, es decir, es necesario poner +34 antes de escribir todo el número sin espacios.
+		   El primer número solo podrá estar contenido en el intervalo de [6-9].</li> 
+		  </ol>
+		  
+		     <fieldset>
+				<legend>Sexo</legend>
+				<input type="radio" id="hombre" name="sexo" value="hombre">
+				<label for="hombre">Hombre</label><br>
+				<input type="radio" id="mujer" name="sexo" value="mujer">
+				<label for="mujer">Mujer</label><br>
+				<input type="radio" id="otro" name="sexo" value="otro">
+				<label for="otro">Otro</label><br>
+			</fieldset>
+			
+		    <p></p><label for="peso">Peso (kg) <strong>*</strong></label>
+			<input type="number" id="peso" name="peso" min="0" max="300" step="1" value = "60" required></p>
+			<p></p><label for="altura">Altura (m) <strong>*</strong></label>
+			<input type="number" id="altura" name="altura" min="0" max="2.5" step="0.01" value = "1.50" required></p>
+			
+			<p> <label for="fecha">Fecha de nacimiento <strong>*</strong></label>
+			    <input type="date" name="fecha" id="fecha" required></p>
+			
+			<p> <input type="checkbox" id="antecedentes" name="antecedentes">
+				<label for="antecedentes">¿Tiene antecedentes médicos relevantes?</label></p>
+			
+			<p> <label for="comment">¿Cuáles?</label><br>
+			<textarea id="comment" name="comment" placeholder="Solo si ha marcado la opción anterior." required></textarea></p>
+
+			<p>
+			   <label>Calidad de sueño </label> 	
+			   <input type="range" id="sueno" name="sueno" min="0" max="20" step="0.1" value="10" required>
+			</p>
+			<p>
+				<label for="actividadFisica">Seleccione un color que represente su nivel de actividad física:<br>
+				<input type="color" id="actividadFisica" name="actividadFisica" value="#00008B" required> 
+			</p>
+
+			<p>
+			  <label for="tabaquismo">Indique su nivel de tabaquismo</label>
+				  <select id="tabaquismo" name="tabaquismo">
+					<option>No fumador</option>
+					<option>Fumador ocasional</option>
+					<option>Gran fumador</option>
+				  </select>
+			</p>			
+			
+			<p> <input type="checkbox" id="info" name="info" value="info">
+			<label for="info">Deseo recibir más información.</label><br></p>
+			
+			<p> 
+				<label for="telefono">Número de contacto (incluya +34)</label>
+				<input type="text" id="telefono" name="telefono" placeholder="Ejemplo: +34612345678" pattern="^\+34[6-9]\d{8}$">
+			</p>
+			
+			<p> <label for="correo">Correo electrónico</label>
+			 <input type="email" name="correo" id="correo">
+		    </p>
+			
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Reiniciar">
+      </form>
+    
+    </main>
+	<footer>
+		<p><i>&copy; Enciclopedia Médica. Derechos reservados.</i></p>
+		<p><em>Página realizada por Francisco Giménez De La Torre y Román Bono Esteve.</em></p>
+	</footer>
+</body>
+</html>

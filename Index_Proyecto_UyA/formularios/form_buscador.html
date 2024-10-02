@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Buscador-Enciclopedia Medica Universidad de Alicante</title>
+</head>
+<body>
+	<header>
+		<a href = "../index.html" >
+			<img src= "../imagenes/logo.jpg" alt = "Inicio">
+			</a>
+		<h1>Enciclopedia Médica Universidad de Alicante</h1>
+    </header>
+    <h2>Formulario buscador de la Enclopedia</h2>
+    
+    <form action= "respuesta_form_buscador.html" method = "get">
+		<p>El siguiente formulario sirve para que usted navegue por la enciclopedia de una manera más personalizada y técnica. </p>
+      <h4>Intrucciones para el relleno de los campos.</h4>
+      <ol> 
+      <li>Los campos que son obligatorios, es decir, aquellos que debes completar para poder enviar el formulario vienen 
+      indicados con el símbolo del asterisco <strong>(*).</strong></li>
+      <li>En los campos que tengan un recuadro blanco, usted puede redactar texto relacionado con lo que se pida
+       en la etiqueta que aparece junto a ese recuadro.</li>
+      <li>Aquellos en los que el asterisco no aparezca son opcionales, usted decide si los desea rellenar.</li> 
+	  <li>Para marcar los síntomas, seleccione tantos como considere.</li> 
+      <li>En el desplegable de las expectativas, usted seleccionará una única opción.</li>
+      </ol>
+		
+		<p> <label for="descripcion">-Descripción de la enfermedad</label><br>
+		<textarea id="descripcion" name="descripcion"> </textarea></p>
+		
+		<p> <label for="causas">-Causas de la enfermedad</label>
+		<input type="text" name="causas" id="causas"></p>
+		
+		
+			<label>-Síntomas:</label>
+			
+			<fieldset>
+            
+            <input type="checkbox" id="fiebre" name="fiebre" value="fiebre">
+            <label for="fiebre">Fiebre</label><br>
+
+            <input type="checkbox" id="tos" name="tos" value="tos">
+            <label for="tos">Tos</label><br>
+
+            <input type="checkbox" id="dificultad_respirar" name="dificultad _respirar" value="dificultad_respirar">
+            <label for="dificultad_respirar">Dificultad para respirar (disnea)</label><br>
+
+            <input type="checkbox" id="fatiga" name="fatiga" value="fatiga">
+            <label for="fatiga">Fatiga</label><br>
+
+            <input type="checkbox" id="dolores_musculares" name="dolores_musculares" value="dolores_musculares">
+            <label for="dolores_musculares">Dolores musculares o corporales</label><br>
+
+            <input type="checkbox" id="dolor_cabeza" name="dolor_cabeza" value="dolor_cabeza">
+            <label for="dolor_cabeza">Dolor de cabeza</label><br>
+
+            <input type="checkbox" id="perdida_go" name="perdida_go" value="perdida_go">
+            <label for="perdida_go">Pérdida del gusto o del olfato</label><br>
+
+            <input type="checkbox" id="dolor_garganta" name="dolor_garganta" value="dolor_garganta">
+            <label for="dolor_garganta">Dolor de garganta</label><br>
+
+            <input type="checkbox" id="congestion_nasal" name="congestion_nasal" value="congestion_nasal">
+            <label for="congestion_nasal">Congestión o secreción nasal</label><br>
+
+            <input type="checkbox" id="nauseas_vomitos" name="nauseas_vomitos" value="nauseas_vomitos">
+            <label for="nauseas_vomitos">Náuseas o vómitos</label><br>
+
+            <input type="checkbox" id="diarrea" name="diarrea" value="diarrea">
+            <label for="diarrea">Diarrea</label><br>
+
+        </fieldset>
+		
+		
+		<p> <label for="pcr">-Detectable con PCR </label>
+		<input type="checkbox" name="pcr" id="pcr"> </p>
+		
+		
+		<p> <label for="tratamiento">-Realice una breve descripción del tratamiento</label>
+		<input type="text" name="tratamiento" id="tratamiento"> </p>
+		
+		<p>
+			<label>-Expectativas (seleccione la más acorde):</label>
+			<select name="expectativas" id="expectativas">
+				<option value="opcion1">Recuperación rápida sin tratamiento</option>
+				<option value="opcion2">Recuperación rápida con tratamiento</option>
+				<option value="opcion3">Recuperación lenta con tratamiento</option>
+				<option value="opcion4">Tratamientos paliativos con amplia esperanza de vida</option>
+				<option value="opcion5">Tratamientos paliativos sin deseable esperanza de vida</option>
+				<option value="opcion6">Enfermedad sin cura encontrada</option>
+			</select>  </p>
+		
+		<input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+
+   <footer>
+		<p><i>&copy; Enciclopedia Médica. Derechos reservados.</i></p>
+		<p><em>Página realizada por Francisco Giménez De La Torre y Román Bono Esteve.</em></p>
+	</footer>
+    
+</body>
+</html>

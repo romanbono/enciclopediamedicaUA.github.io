@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width,initial-scale=1.0" />
     <title>Enciclopedia Medica Universidad de Alicante</title>
+   <link href="CSS/CSS.css" rel="stylesheet"> 
+   <link href="CSS/EncabezadoYFooter.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -17,9 +20,11 @@
     <main>
     <nav> 
 		<h2><a href ="mapa_sitio_web.html">Mapa del sitio Web</a></h2>
-		<h3><a href="formularios/form_buscador.html">Buscador Personalizado</a></h3>
+		<h3>¿Posee conocimientos avanzados en materia sanitaria?</h3>
+			<p>Entonces puede realizar sus búsquedas mediante nuestro
+		     <a href="formularios/form_buscador.html">Buscador Personalizado.</a></p>
 	<p>Este es el navegador de artículos por orden alfabético.</p>	
-    <ul>
+    <ul class="normal">
 		<li><a href="pagina_error.html">A</a></li>
 		<li><a href="pagina_error.html">B</a></li>
 		<li><a href="indices/indiceC.html">C</a></li>
@@ -47,28 +52,82 @@
 		<li><a href="pagina_error.html">Y</a></li>
 		<li><a href="pagina_error.html">Z</a></li>
     </ul>
+    
+    <!-- Esto es solo para maquetacion mini-->
+
+	<select class= "mini" onchange="if (this.value) window.location.href=this.value;">
+		<option value="pagina_error.html">A</option>
+		<option value="pagina_error.html">B</option>
+		<option value="indices/indiceC.html">C</option>
+		<option value="pagina_error.html">D</option>
+		<option value="indices/indiceE.html">E</option>
+		<option value="pagina_error.html">F</option>
+		<option value="pagina_error.html">G</option>
+		<option value="pagina_error.html">H</option>
+		<option value="indices/indiceI.html">I</option>
+		<option value="pagina_error.html">J</option>
+		<option value="pagina_error.html">K</option>
+		<option value="pagina_error.html">L</option>
+		<option value="pagina_error.html">M</option>
+		<option value="pagina_error.html">N</option>
+		<option value="pagina_error.html">O</option>
+		<option value="indices/indiceP.html">P</option>
+		<option value="pagina_error.html">Q</option>
+		<option value="pagina_error.html">R</option>
+		<option value="pagina_error.html">S</option>
+		<option value="pagina_error.html">T</option>
+		<option value="pagina_error.html">U</option>
+		<option value="pagina_error.html">V</option>
+		<option value="pagina_error.html">W</option>
+		<option value="pagina_error.html">X</option>
+		<option value="pagina_error.html">Y</option>
+		<option value="pagina_error.html">Z</option>
+	</select>
+		<!---->
+    
     </nav>
     
-    <h3><a href="formularios/form_contacto.html" >Soporte de contacto</a></h3>
-    <h3><a href="declaracionAcc.html">Declaración de Accesibilidad del sitio web</a></h3>
-    
+	<section class= "columnas">
     <h3>Temas destacados</h3>
-    
-	<p>La enfermedad de <a href="articulos/parkinson.html">Parkinson</a> es un trastorno neurodegenerativo crónico que afecta el sistema nervioso central...</p>
+    <ul > 
+	<li>La enfermedad de <a href="articulos/parkinson.html">Parkinson</a> es 
+	un trastorno neurodegenerativo crónico que afecta el sistema nervioso central...</li>
 	
-	<p>La <a href="articulos/ela.html">ELA</a> es
+	<li>La <a href="articulos/ela.html">ELA</a> es
 		 una enfermedad neurodegenerativa progresiva que 
 		 afecta las células nerviosas en el cerebro y la
-		  médula espinal...</p>
+		  médula espinal...</li>
 		  
-	<p>Los países con mayor <a href="articulos/inversion_en_sanidad.html"> inversión en sanidad </a> (porcentualmente) son Estados Unidos, Suiza y Alemania. </p>	  
+	<li>Los países con mayor <a href="articulos/inversion_en_sanidad.html"> inversión en sanidad </a> 
+	(porcentualmente) son Estados Unidos, Suiza y Alemania. </li>	  
+	</ul>
+	</section>
+	
+	
+	<section class= "columnas">
+	<h3  >Estamos dispuestos a ayudarle</h3>
+		<p >Si necesita ayuda, no dude en ponerse en 
+		contacto con nosotros mediante nuestro
+		<a href="formularios/form_contacto.html"> Soporte de contacto. </a> </p>
+		
+    <p> El compromiso con todas las personas es algo esencial 
+    para el desarrollo como sociedad, por ello en la Universidad de Alicante 
+    estamos más que involucrados y así consta en nuestra 
+    <a href="declaracionAcc.html"> Declaración de Accesibilidad Web.</a></p>
+     </section>
 	</main>
+	
+	<section class= "columnas" id= "autoevaluacion">
 	<aside> 
-		<h3>¿Desea conocer más sobre su estado de salud?</h3>
-		<ul>
+		
+		<h3 >¿Desea conocer más sobre su estado de salud?</h3>
+		<ul >
 		<li>Realizar <a href="formularios/autoevaluacion_form.html"> autoevaluación.</a></li>
 		</ul>
+		
 	</aside>
+	</section>
+	
     <footer>
 		<p><em>&copy; Enciclopedia Médica. Derechos reservados.</em></p>
 		<address><em>Página realizada por <a href= "mailto:gimenezdelatorrequico@gmail.com">Francisco Giménez De La Torre</a>

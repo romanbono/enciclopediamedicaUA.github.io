@@ -1,0 +1,97 @@
+/* Fuentes generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #0056b3; /* Azul oscuro */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Enlaces */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Párrafos */
+p {
+    margin: 15px 0;
+}
+
+/* Listas */
+ul, ol {
+    margin: 15px 0 15px 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin: 10px 0;
+}
+
+/* Citas */
+blockquote {
+    border-left: 4px solid #0056b3;
+    padding: 10px 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    font-style: italic;
+}
+
+/* Estilo de botones */
+.button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.button:hover {
+    background-color: #004494; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para secciones destacadas */
+.highlight {
+    background-color: #e7f3ff; /* Fondo azul claro */
+    border-left: 5px solid #0056b3; /* Borde azul oscuro */
+    padding: 10px;
+    margin: 20px 0;
+}

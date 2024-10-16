@@ -67,7 +67,7 @@ fieldset {
 }
 
 .check, .radio{
-	width: 50%;
+	width: 70%;
 	float: left;
 	transform: scale(1.5);
 }

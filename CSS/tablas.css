@@ -1,0 +1,68 @@
+/* Espaciado y distribución */
+table {
+  table-layout: fixed;
+  width: 80%;
+  margin: 60px auto;
+}
+
+
+
+th, td {
+  padding: 20px;
+}
+
+/* Bordes */
+table, tr, th, td {
+  border-collapse: collapse;
+  border: 3px solid #003366; /* Borde en azul oscuro */
+}
+
+/* Tipografía */
+thead th, tfoot th, caption {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tbody td {
+  text-align: center;
+  color: white; /* Todo el texto en blanco */
+}
+
+tfoot th {
+  text-align: right;
+  color: white; /* Texto blanco para el pie */
+}
+
+caption {
+  font-variant: small-caps;
+  color: #0056b3; /* Texto del caption en azul más claro */
+  font-size: 1.5em; /* Tamaño de fuente más grande */
+  padding: 20px; /* Mayor padding para el caption */
+  text-align: center; /* Centrado */
+}
+
+
+thead, tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); /* Efecto degradado en encabezados */
+  color: white; /* Texto blanco para los headers */
+}
+
+/* Estilo cebra */
+tbody tr:nth-child(odd) {
+  background-color: #0056b3; /* Color más oscuro para filas impares */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #337ab7; /* Color ligeramente más claro para filas pares */
+}
+
+/* Texto blanco en toda la tabla */
+th, td {
+  color: white; /* Todo el texto de las celdas es blanco */
+}
+
+

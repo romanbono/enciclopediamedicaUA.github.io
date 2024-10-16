@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Formulario Buscador-Enciclopedia Medica Universidad de Alicante</title>
     <link href="../CSS/EncabezadoYFooter.css" rel="stylesheet">
+	<link href= "../CSS/formularios.css" rel= "stylesheet">
+	<link href="../CSS/CSS.css" rel= "stylesheet">
 </head>
 <body>
 	<header>
@@ -41,44 +43,45 @@
 			
 			<fieldset>
             
-            <input type="checkbox" id="fiebre" name="fiebre" value="fiebre">
-            <label for="fiebre">Fiebre</label><br>
-
-            <input type="checkbox" id="tos" name="tos" value="tos">
-            <label for="tos">Tos</label><br>
-
-            <input type="checkbox" id="dificultad_respirar" name="dificultad _respirar" value="dificultad_respirar">
-            <label for="dificultad_respirar">Dificultad para respirar (disnea)</label><br>
-
-            <input type="checkbox" id="fatiga" name="fatiga" value="fatiga">
-            <label for="fatiga">Fatiga</label><br>
-
-            <input type="checkbox" id="dolores_musculares" name="dolores_musculares" value="dolores_musculares">
-            <label for="dolores_musculares">Dolores musculares o corporales</label><br>
-
-            <input type="checkbox" id="dolor_cabeza" name="dolor_cabeza" value="dolor_cabeza">
-            <label for="dolor_cabeza">Dolor de cabeza</label><br>
-
-            <input type="checkbox" id="perdida_go" name="perdida_go" value="perdida_go">
-            <label for="perdida_go">Pérdida del gusto o del olfato</label><br>
-
-            <input type="checkbox" id="dolor_garganta" name="dolor_garganta" value="dolor_garganta">
-            <label for="dolor_garganta">Dolor de garganta</label><br>
-
-            <input type="checkbox" id="congestion_nasal" name="congestion_nasal" value="congestion_nasal">
-            <label for="congestion_nasal">Congestión o secreción nasal</label><br>
-
-            <input type="checkbox" id="nauseas_vomitos" name="nauseas_vomitos" value="nauseas_vomitos">
-            <label for="nauseas_vomitos">Náuseas o vómitos</label><br>
-
-            <input type="checkbox" id="diarrea" name="diarrea" value="diarrea">
-            <label for="diarrea">Diarrea</label><br>
+            <label for="fiebre">Fiebre</label>
+            <input type="checkbox" id="fiebre" name="fiebre" value="fiebre" class="check">
+            
+			<label for="tos">Tos</label>
+            <input type="checkbox" id="tos" name="tos" value="tos" class="check">
+            
+			<label for="dificultad_respirar">Dificultad para respirar (disnea)</label>
+            <input type="checkbox" id="dificultad_respirar" name="dificultad_respirar" value="dificultad_respirar" class="check">
+            
+			<label for="fatiga">Fatiga</label>
+            <input type="checkbox" id="fatiga" name="fatiga" value="fatiga" class="check">
+            
+			<label for="dolores_musculares">Dolores musculares o corporales</label>
+            <input type="checkbox" id="dolores_musculares" name="dolores_musculares" value="dolores_musculares" class="check">
+            
+			<label for="dolor_cabeza">Dolor de cabeza</label>
+            <input type="checkbox" id="dolor_cabeza" name="dolor_cabeza" value="dolor_cabeza" class="check">
+            
+			<label for="perdida_go">Pérdida del gusto o del olfato</label>
+            <input type="checkbox" id="perdida_go" name="perdida_go" value="perdida_go" class="check">
+            
+			<label for="dolor_garganta">Dolor de garganta</label>
+            <input type="checkbox" id="dolor_garganta" name="dolor_garganta" value="dolor_garganta" class="check">
+            
+			<label for="congestion_nasal">Congestión o secreción nasal</label>
+            <input type="checkbox" id="congestion_nasal" name="congestion_nasal" value="congestion_nasal" class="check">
+            
+			<label for="nauseas_vomitos">Náuseas o vómitos</label>
+            <input type="checkbox" id="nauseas_vomitos" name="nauseas_vomitos" value="nauseas_vomitos" class="check">
+            
+			<label for="diarrea">Diarrea</label>
+            <input type="checkbox" id="diarrea" name="diarrea" value="diarrea" class="check">
+            
 
         </fieldset>
 		
 		
 		<p> <label for="pcr">-Detectable con PCR </label>
-		<input type="checkbox" name="pcr" id="pcr"> </p>
+		<input class = "check" type="checkbox" name="pcr" id="pcr"> </p>
 		
 		
 		<p> <label for="tratamiento">-Realice una breve descripción del tratamiento</label>
@@ -95,8 +98,8 @@
 				<option value="opcion6">Enfermedad sin cura encontrada</option>
 			</select>  </p>
 		
-		<input type="submit" value="Enviar">
-        <input type="reset" value="Reiniciar">
+		<input class="boton" type="submit" value="Enviar">
+        <input class="boton" type="reset" value="Reiniciar">
     </form>
 
    <footer>

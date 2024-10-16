@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Enciclopedia Medica Universidad de Alicante</title>
     <link href="../CSS/EncabezadoYFooter.css" rel="stylesheet">
-    
+    <link href= "../CSS/formularios.css" rel= "stylesheet">
+    <link href="../CSS/CSS.css" rel= "stylesheet">
+    <link href= "../CSS/fontawesome/css/all.min.css" rel= "stylesheet">
 </head>
 <body>
 	<header>
@@ -40,12 +42,15 @@
 		  
 		     <fieldset>
 				<legend>Sexo</legend>
-				<input type="radio" id="hombre" name="sexo" value="hombre">
-				<label for="hombre">Hombre</label><br>
-				<input type="radio" id="mujer" name="sexo" value="mujer">
-				<label for="mujer">Mujer</label><br>
-				<input type="radio" id="otro" name="sexo" value="otro">
-				<label for="otro">Otro</label><br>
+				<label for="hombre">Hombre</label>
+				<input class = "radio" type="radio" id="hombre" name="sexo" value="hombre">
+				
+				<label for="mujer">Mujer</label>
+				<input class = "radio" type="radio" id="mujer" name="sexo" value="mujer">
+				
+				<label for="otro">Otro</label>
+				<input class = "radio" type="radio" id="otro" name="sexo" value="otro">
+				
 			</fieldset>
 			
 		    <p><label for="peso">Peso (kg) <strong>*</strong></label>
@@ -57,25 +62,26 @@
 			<p> <label for="fecha">Fecha de nacimiento <strong>*</strong></label>
 			    <input type="date" name="fecha" id="fecha" required></p>
 			
-			<p> <input type="checkbox" id="antecedentes" name="antecedentes">
-				<label for="antecedentes">¿Tiene antecedentes médicos relevantes?</label></p>
+			<p> <label for="antecedentes">¿Tiene antecedentes médicos relevantes?</label>
+			<input class = "check" type="checkbox" id="antecedentes" name="antecedentes">
+				</p>
 			
-			<p> <label for="comment">¿Cuáles?</label><br>
+			<p> <label for="comment">¿Cuáles?</label>
 			<textarea id="comment" name="comment" placeholder="Solo si ha marcado la opción anterior."></textarea></p>
 
 			<p>
-			   <label>Calidad de sueño (0 a 10) </label> 	
+			   <label for="sueno">Calidad de sueño (0 a 10) <i class="fas fa-bed icono"></i></label> 	
 			   <input type="range" id="sueno" name="sueno" min="0" max="10" step="0.1" 
 			   value="0" onchange="document.getElementById('outputSueno').value=value">
 			   <output id = "outputSueno" name = "outputSueno" for="sueno">0</output>
 			</p>
 			<p>
-				<label for="actividadFisica">Seleccione un color que represente su nivel de actividad física:</label><br>
+				<label for="actividadFisica">Seleccione un color que represente su nivel de actividad física:</label>
 				<input type="color" id="actividadFisica" name="actividadFisica" value="#00008B"> 
 			</p>
 
 			<p>
-			  <label for="tabaquismo">Indique su nivel de tabaquismo</label>
+			  <label for="tabaquismo">Indique su nivel de tabaquismo<i class="fas fa-smoking icono"></i></label>
 				  <select id="tabaquismo" name="tabaquismo">
 					<option>No fumador</option>
 					<option>Fumador ocasional</option>
@@ -83,20 +89,21 @@
 				  </select>
 			</p>			
 			
-			<p> <input type="checkbox" id="info" name="info" value="info">
-			<label for="info">Deseo recibir más información.</label><br></p>
+			<p> <label for="info">Deseo recibir más información.</label>
+			<input class = "check" type="checkbox" id="info" name="info" value="info">
+			</p>
 			
 			<p> 
-				<label for="telefono">Número de contacto (incluya +34)</label>
+				<label for="telefono">Número de contacto (incluya +34)<i class="fas fa-phone icono"></i></label>
 				<input type="text" id="telefono" name="telefono" placeholder="Ejemplo: +34612345678" pattern="^\+34[6-9]\d{8}$">
 			</p>
 			
-			<p> <label for="correo">Correo electrónico</label>
+			<p> <label for="correo">Correo electrónico <i class="fas fa-envelope icono"></i></label>
 			 <input type="email" name="correo" id="correo">
 		    </p>
 			
-			<input type="submit" value="Enviar">
-			<input type="reset" value="Reiniciar">
+			<input class = "boton" type="submit" value="Enviar">
+			<input class="boton" type="reset" value="Reiniciar">
       </form>
     
     </main>

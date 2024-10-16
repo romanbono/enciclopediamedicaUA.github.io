@@ -1,0 +1,104 @@
+/* Estilos para los controles de formulario */
+label {
+    float: left;
+    width: 30%;
+    color: #003366; /* Color azul oscuro para el texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin: 20px; /* Espaciado inferior entre labels, incrementado */
+    margin-top: 50px;
+}
+
+fieldset label{
+	width: 50%;
+}
+
+input, textarea, select {
+    float: right;
+    width: 20%;
+    padding: 12px; /* Espaciado interno para mejor usabilidad, incrementado */
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ecf0f1; /* Fondo claro */
+    color: #2C3E50; /* Color del texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    margin: 15px; /* Espaciado inferior entre inputs, incrementado */
+    margin-right: 50%;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+/* Estilo específico para textarea */
+textarea {
+    height: 120px; /* Altura ajustada para el área de texto, incrementada */
+}
+
+/* Estilo para fieldset */
+fieldset {
+    width: 50%;
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 25px; /* Espaciado interno, incrementado */
+    margin: 40px; /* Espaciado inferior del fieldset, incrementado */
+}
+
+/* Estilo para botones */
+.boton {
+    width: 20%;
+    background-color: #1F74AD; /* Azul claro para el botón */
+    color: white; /* Texto blanco para el botón */
+    border: none; /* Sin borde */
+    padding: 12px; /* Espaciado interno, incrementado */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita para el texto del botón */
+	float: none;
+	
+    margin: 25px auto;  /* Centrar el botón */
+	margin-left: 40%;
+	margin-right: 40%; 
+}
+
+/* Efecto hover para el botón */
+.boton:hover {
+    background-color: #00509e; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+.check, .radio{
+	width: 70%;
+	float: left;
+	transform: scale(1.5);
+}
+
+#pcr, #info, #antecedentes{
+	width: 70%;
+}
+
+
+output {
+	float: right;
+    display: inline-block;
+    width: 1%; /* Alineado con inputs */
+    padding: 12px; /* Espaciado interno */
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ecf0f1; /* Fondo claro */
+    color: #2C3E50; /* Color del texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+legend{
+	color: #003366; /* Color azul oscuro para el texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    font-weight: bold;
+}
+
+.icono {
+  color: #4CAF50; /* Cambia el color del icono (puedes personalizarlo) */
+  font-size: 20px; /* Tamaño del icono */
+  margin-left: 10px; /* Espacio a la izquierda del icono */
+  vertical-align: middle; /* Alinear el icono verticalmente con el texto */
+}

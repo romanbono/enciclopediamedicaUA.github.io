@@ -1,0 +1,6 @@
+thead th:nth-child(1){
+	width: 30%;
+}
+thead th:nth-child(2), thead th:nth-child(3) {
+    width: 25%;
+}

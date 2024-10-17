@@ -10,7 +10,7 @@ body {
 
 /* Encabezados */
 h1, h2, h3 {
-    color: #0056b3; /* Azul oscuro */
+    color: #0056b3;
 }
 
 h1 {
@@ -32,14 +32,13 @@ h3 {
 
 /* Enlaces */
 a {
-    color: #003366; /* Color de texto para enlaces (azul oscuro) */
-    text-decoration: none; /* Sin subrayado por defecto */
-    font-weight: bold; /* Texto en negrita para enlaces */
+    color: #003366;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #00509e; /* Color al pasar el mouse (más oscuro que el base) */
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #00509e;
+    text-decoration: underline;
 }
 
 /* Párrafos */
@@ -60,8 +59,8 @@ li {
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 5px; /* Esquinas redondeadas */
+    border: 1px solid #ddd;
+    border-radius: 5px;
     margin: 10px 0;
 }
 
@@ -70,7 +69,7 @@ q {
     border-left: 4px solid #0056b3;
     padding: 10px 15px;
     margin: 20px 0;
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #f9f9f9;
     font-style: italic;
 }
 
@@ -83,17 +82,18 @@ q {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
 }
 
 .button:hover {
-    background-color: #004494; /* Color más oscuro al pasar el ratón */
+    background-color: #004494;
 }
 
 /* Estilo para secciones destacadas */
 .highlight {
-    background-color: #e7f3ff; /* Fondo azul claro */
-    border-left: 5px solid #0056b3; /* Borde azul oscuro */
+    background-color: #e7f3ff;
+    border-left: 5px solid #0056b3;
     padding: 10px;
     margin: 20px 0;
 }
+

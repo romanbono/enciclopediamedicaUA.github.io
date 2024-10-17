@@ -3,11 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fondo claro */
-    color: #2C3E50; /* Color del texto */
+    background-color: #f4f4f4;
+    color: #2C3E50;
 }
-
-
 
 /* Contenido principal */
 main {
@@ -16,74 +14,77 @@ main {
 
 /* Navegación alfabética */
 nav {
-    background-color: #ffffff; /* Fondo blanco para la navegación */
+    background-color: #ffffff;
     padding: 20px;
-    border: 2px solid #003366; /* Azul oscuro para el borde */
+    border: 2px solid #003366;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px; /* Separación del contenido */
+    margin-bottom: 20px;
 }
 
 /* Estilo de la cabecera de navegación */
 nav h2 {
-    color: #003366; /* Azul oscuro para el título de la navegación */
-    font-size: 1.4em;
+    color: #003366;
+    font-size: 1.5em;
     margin-bottom: 10px;
+}
+
+nav #mapa {
+    font-size: 1em;
 }
 
 /* Estilos para el índice alfabético */
 nav ul {
-    list-style-type: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-    margin: 0; /* Sin margen */
-    display: flex; /* Usamos flexbox para alinear en horizontal */
-    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben en una sola fila */
-    justify-content: flex-start; /* Alineación a la izquierda */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 nav ul li {
-    margin: 10px; /* Espaciado entre los elementos */
+    margin: 10px;
 }
 
 nav ul li a {
-    display: block; /* Permite que el enlace sea un bloque completo */
-    padding: 10px 15px; /* Padding alrededor del texto */
-    background-color: #3498db; /* Color de fondo normal (azul claro) */
-    color: #003366; /* Color del texto coincide con el color de h2 */
-    text-align: center; /* Centrar el texto dentro del enlace */
-    font-size: 1.2em; /* Tamaño de fuente */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Esquinas redondeadas */
-    text-decoration: none; /* Sin subrayado por defecto */
+    display: block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #003366;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 /* Efecto hover para enlaces en el índice */
 nav ul li a:hover {
-    background-color: #00509e; /* Color de fondo más oscuro al pasar el mouse */
-    color: #ffffff; /* Texto blanco para contraste */
+    background-color: #00509e;
+    color: #ffffff;
 }
 
 /* Efecto de foco en los enlaces del índice */
 nav ul li a:focus {
-    outline: 2px dashed #e67e22; /* Contorno visible al usar el teclado */
+    outline: 2px dashed #e67e22;
 }
 
 /* Efectos hover en el resto de los enlaces */
 a {
-    color: #003366; /* Color de texto para enlaces (azul oscuro) */
-    text-decoration: none; /* Sin subrayado por defecto */
-    font-weight: bold; /* Texto en negrita para enlaces */
+    color: #003366;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #00509e; /* Color al pasar el mouse (más oscuro que el base) */
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #00509e;
+    text-decoration: underline;
 }
 
 /* Temas destacados */
-h3 {
-    color: #003366; /* Azul oscuro */
-    font-size: 1.6em;
+h2 {
+    color: #003366;
+    font-size: 1.3em;
     margin: 20px;
 }
 
@@ -93,73 +94,71 @@ p {
     margin: 20px;
 }
 
-
 /* Aside */
 aside {
-    background-color: #ecf0f1; /* Fondo claro para el aside */
-    border-left: 5px solid #003366; /* Azul oscuro para el borde */
+    background-color: #ecf0f1;
+    border-left: 5px solid #003366;
     border-radius: 5px;
     padding: 20px;
-    margin: 20px 0; /* Espacio alrededor del aside */
+    margin: 20px 0;
 }
 
-.mini{
-	display: none;
-}
-
-
-/* maquetacion columnas si hay mas de 980px de resolucion */
-
-@media (min-width: 980px){
-.columnas{
-	float: left;
-}
-
-.columnas {
-	width: 30%;
-	}
-
-.columnas#autoevaluacion {
-	width: 40%;
-	}
-
-section ul{
-    margin: 20px;
-}
-}
-
-/*indice letras si hay menos de 480px (moviles)*/
-@media (max-width: 480px){
 .mini {
-	display: inherit !important;
-
-}
-.normal{
-	display: none;
+    display: none;
 }
 
-select {
-    background-color: #ffffff; /* Fondo blanco para el menú desplegable */
-    border: 2px solid #003366; /* Borde azul oscuro */
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 10px; /* Espaciado interno */
-    font-size: 1.2em; /* Tamaño de fuente */
-    color: #003366; /* Color del texto */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+/* Maquetación columnas si hay más de 980px de resolución */
+@media (min-width: 980px) {
+    .columnas {
+        float: left;
+    }
+
+    .columnas {
+        width: 30%;
+    }
+
+    .columnas#autoevaluacion {
+        width: 40%;
+    }
+
+    section ul {
+        margin: 20px;
+    }
 }
 
-/* Efecto hover para el menú desplegable */
-select:hover {
-    background-color: #ecf0f1; /* Fondo claro al pasar el mouse */
+/* Índice letras si hay menos de 480px (móviles) */
+@media (max-width: 480px) {
+    .mini {
+        display: inherit !important;
+    }
+
+    .normal {
+        display: none;
+    }
+
+    select {
+        background-color: #ffffff;
+        border: 2px solid #003366;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.2em;
+        color: #003366;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    /* Efecto hover para el menú desplegable */
+    select:hover {
+        background-color: #ecf0f1;
+    }
+
+    /* Efecto de foco en el menú desplegable */
+    select:focus {
+        outline: none;
+        border-color: #e67e22;
+        box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+    }
 }
 
-/* Efecto de foco en el menú desplegable */
-select:focus {
-    outline: none; /* Sin contorno por defecto */
-    border-color: #e67e22; /* Cambia el borde al color de foco */
-    box-shadow: 0 0 5px rgba(230, 126, 34, 0.5); /* Sombra sutil de foco */
-}
 
-}

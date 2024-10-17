@@ -32,12 +32,14 @@ h3 {
 
 /* Enlaces */
 a {
-    color: #0056b3;
-    text-decoration: none;
+    color: #003366; /* Color de texto para enlaces (azul oscuro) */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold; /* Texto en negrita para enlaces */
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #00509e; /* Color al pasar el mouse (más oscuro que el base) */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
 /* Párrafos */

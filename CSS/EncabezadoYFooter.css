@@ -3,6 +3,7 @@ header {
     background-color: #003366; /* Azul oscuro para el encabezado */
     padding: 20px;
     text-align: center;
+    
 }
 
 header img {
@@ -16,6 +17,30 @@ header h1 {
     margin-left: 20px;
     font-size: 1.8em;
 }
+
+header #skip 
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+color: white;
+}
+ 
+header #skip:focus, header #skip:hover
+{
+position:static;
+width:auto;
+height:auto;
+color: white;
+margin-right: 30px
+}
+
+
+
+
 
 /* Footer */
 footer {

@@ -1,99 +1,100 @@
-/* Estilos para los controles de formulario */
-label {
-    float: left;
-    width: 30%;
-    color: #003366;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    margin: 20px;
-    margin-top: 50px;
-}
-
-fieldset label {
-    width: 50%;
-}
-
-input, textarea, select {
-    float: right;
-    width: 20%;
-    padding: 12px;
-    border: 2px solid #003366;
-    border-radius: 5px;
-    background-color: #ecf0f1;
-    color: #2C3E50;
-    font-family: Arial, sans-serif;
-    margin: 15px;
-    margin-right: 50%;
-    margin-bottom: 40px;
-    margin-top: 5px;
-}
-
-textarea {
-    height: 120px;
-}
-
+/* Estilo para el fieldset */
 fieldset {
-    width: 50%;
-    border: 2px solid #003366;
-    border-radius: 5px;
-    background-color: #f4f4f4;
-    padding: 25px;
-    margin: 40px;
+    display: grid; /* Habilita CSS Grid */
+    grid-template-columns: 1fr; /* Solo una columna para formato vertical */
+    gap: 10px; /* Espaciado entre filas */
+    width: 50%; /* Mantener ancho del fieldset */
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 25px; /* Espaciado interno */
+    margin: 40px 0; /* Margen superior e inferior */
+    margin-left: 0; /* Alinear a la izquierda */
+    margin-right: auto; /* No es necesario, pero se puede mantener para centrarlo si hay espacio */
 }
 
+/* Estilo para las etiquetas */
+label {
+    color: #003366; /* Color azul oscuro para el texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilo para inputs, textarea y select */
+input, textarea, select {
+    width: 100%; /* Cambia el ancho al 100% para que se ajuste a la columna */
+    padding: 12px; /* Espaciado interno para mejor usabilidad */
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ecf0f1; /* Fondo claro */
+    color: #2C3E50; /* Color del texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    margin: 0; /* Se elimina el margen para que el grid lo gestione */
+}
+
+/* Estilo específico para textarea */
+textarea {
+    height: 120px; /* Altura ajustada para el área de texto */
+}
+
+/* Estilo para botones */
 .boton {
-    width: 20%;
-    background-color: #1F74AD;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    float: none;
-    margin: 25px auto;
-    margin-left: 40%;
-    margin-right: 40%;
+    grid-column: 1; /* Abarca solo la primera columna */
+    background-color: #1F74AD; /* Azul claro para el botón */
+    color: white; /* Texto blanco para el botón */
+    border: none; /* Sin borde */
+    padding: 12px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita para el texto del botón */
+    margin: 25px 0; /* Espaciado vertical alrededor del botón */
 }
 
+/* Efecto hover para el botón */
 .boton:hover {
-    background-color: #00509e;
+    background-color: #00509e; /* Color de fondo más oscuro al pasar el mouse */
 }
 
+/* Checkbox y Radio */
 .check, .radio {
-    width: 70%;
-    float: left;
-    transform: scale(1.5);
+    width: auto; /* Mantener el tamaño natural */
+    transform: scale(1.5); /* Escalar checkbox/radio */
+    margin-right: 10px; /* Espaciado a la derecha */
+    margin-top: 5px; /* Espaciado superior para alineación */
 }
 
-#pcr, #info, #antecedentes {
-    width: 70%;
+/* Agrupar botones de sexo */
+.gender-group {
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    gap: 10px; /* Espaciado entre botones */
+    margin: 10px 0; /* Espacio vertical */
 }
 
+/* Estilo para output */
 output {
-    float: right;
-    display: inline-block;
-    width: 1%;
-    padding: 12px;
-    border: 2px solid #003366;
-    border-radius: 5px;
-    background-color: #ecf0f1;
-    color: #2C3E50;
-    font-family: Arial, sans-serif;
-    margin: 10px 0;
+    grid-column: 1; /* Alineado en una sola fila */
+    padding: 12px; /* Espaciado interno */
+    border: 2px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ecf0f1; /* Fondo claro */
+    color: #2C3E50; /* Color del texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
 
+/* Estilo para legend */
 legend {
-    color: #003366;
-    font-family: Arial, sans-serif;
+    color: #003366; /* Color azul oscuro para el texto */
+    font-family: Arial, sans-serif; /* Tipografía similar */
     font-weight: bold;
 }
 
+/* Estilo para icono */
 .icono {
-    color: #4CAF50;
-    font-size: 20px;
-    margin-left: 10px;
-    vertical-align: middle;
+    color: #4CAF50; /* Cambia el color del icono */
+    font-size: 20px; /* Tamaño del icono */
+    margin-left: 10px; /* Espacio a la izquierda del icono */
+    vertical-align: middle; /* Alinear el icono verticalmente con el texto */
 }
-

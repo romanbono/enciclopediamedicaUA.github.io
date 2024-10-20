@@ -1,0 +1,164 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro para alto contraste */
+    color: #FFFFFF; /* Texto blanco para máximo contraste */
+    font-size: 1.2em; /* Aumento del tamaño de la fuente base */
+}
+
+/* Contenido principal */
+main {
+    margin: 20px;
+}
+
+/* Navegación alfabética */
+nav {
+    background-color: #333333; /* Fondo gris oscuro para alto contraste */
+    padding: 20px;
+    border: 3px solid #FFD700; /* Borde amarillo dorado para contraste claro */
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    margin-bottom: 20px; /* Separación del contenido */
+}
+
+/* Estilo de la cabecera de navegación */
+nav h2 {
+    color: #FFD700; /* Amarillo dorado para el título, máximo contraste sobre gris oscuro */
+    font-size: 1.6em; /* Aumento del tamaño de fuente para mayor visibilidad */
+    margin-bottom: 10px;
+}
+
+/* Estilos para el índice alfabético */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    display: flex; /* Usamos flexbox para alinear en horizontal */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben en una sola fila */
+    justify-content: flex-start; /* Alineación a la izquierda */
+}
+
+nav ul li {
+    margin: 10px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    display: block; /* Permite que el enlace sea un bloque completo */
+    padding: 10px 15px; /* Padding alrededor del texto */
+    background-color: #00509e; /* Azul oscuro para el fondo de los enlaces */
+    color: #FFFFFF; /* Texto blanco para contraste máximo sobre azul */
+    text-align: center; /* Centrar el texto dentro del enlace */
+    font-size: 1.4em; /* Aumento del tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Esquinas redondeadas */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+/* Efecto hover para enlaces en el índice */
+nav ul li a:hover {
+    background-color: #FFD700; /* Amarillo brillante al pasar el mouse */
+    color: #000000; /* Texto negro para contraste con amarillo */
+}
+
+/* Efecto de foco en los enlaces del índice */
+nav ul li a:focus {
+    outline: 3px solid #FF4500; /* Contorno visible, naranja fuerte */
+}
+
+/* Efectos hover en el resto de los enlaces */
+a {
+    color: #FFD700; /* Color de texto amarillo dorado */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold; /* Texto en negrita para enlaces */
+    font-size: 1.2em; /* Aumento del tamaño de la fuente */
+}
+
+a:hover {
+    color: #FF4500; /* Color naranja brillante al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Temas destacados */
+h3 {
+    color: #FFD700; /* Amarillo dorado */
+    font-size: 1.8em; /* Aumento del tamaño de la fuente */
+    margin: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1.3em; /* Aumento del tamaño de la fuente para párrafos */
+    margin: 20px;
+    color: #FFFFFF; /* Asegura que el texto de los párrafos también tenga alto contraste */
+}
+
+/* Aside */
+aside {
+    background-color: #333333; /* Fondo gris oscuro para alto contraste */
+    border-left: 5px solid #FFD700; /* Borde amarillo dorado */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0; /* Espacio alrededor del aside */
+}
+
+.mini {
+    display: none;
+}
+
+/* Maquetación columnas si hay más de 980px de resolución */
+@media (min-width: 980px) {
+    .columnas {
+        float: left;
+    }
+
+    .columnas {
+        width: 30%;
+    }
+
+    .columnas#autoevaluacion {
+        width: 40%;
+    }
+
+    section ul {
+        margin: 20px;
+    }
+}
+
+/* Índice letras si hay menos de 480px (móviles) */
+@media (max-width: 480px) {
+    .mini {
+        display: inherit !important;
+    }
+
+    .normal {
+        display: none;
+    }
+
+    select {
+        background-color: #00509e; /* Fondo azul oscuro */
+        border: 2px solid #FFD700; /* Borde amarillo dorado */
+        border-radius: 5px; /* Esquinas redondeadas */
+        padding: 10px; /* Espaciado interno */
+        font-size: 1.4em; /* Aumento del tamaño de la fuente */
+        color: #FFFFFF; /* Texto blanco para contraste */
+        cursor: pointer; /* Cambia el cursor al pasar por encima */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+        transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+    }
+
+    /* Efecto hover para el menú desplegable */
+    select:hover {
+        background-color: #FFD700; /* Fondo amarillo al pasar el mouse */
+        color: #000000; /* Texto negro para contraste */
+    }
+
+    /* Efecto de foco en el menú desplegable */
+    select:focus {
+        outline: none; /* Sin contorno por defecto */
+        border-color: #FF4500; /* Borde naranja al enfocar */
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); /* Sombra sutil de foco */
+    }
+}

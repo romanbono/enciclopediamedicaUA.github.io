@@ -31,12 +31,13 @@
     }
 
     /* Mostrar el URL de los enlaces */
+    /*
     a::after {
-        content: " (" attr(href) ")"; /* Muestra el URL después del texto del enlace */
-        font-size: 10pt; /* Tamaño de fuente más pequeño para el URL */
-        color: gray; /* Color gris para los URLs */
-    }
-
+        content: " (" attr(href) ")"; 
+        font-size: 10pt; 
+        color: gray; 
+    }*/
+     
     /* Mantener imágenes importantes */
     img {
         display: inline; /* Mantener imágenes que son parte del contenido */
@@ -58,7 +59,7 @@
 
     /* Incluir URL de la página */
     footer::after {
-        content: "URL: " attr(data-url); /* URL de la página */
+        content:  attr(data-url); /* URL de la página */
         display: block;
         font-size: 10pt; /* Tamaño más pequeño para la URL */
         margin-top: 10px;

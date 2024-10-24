@@ -31,12 +31,12 @@
     }
 
     /* Mostrar el URL de los enlaces */
-    /*
+    
     a::after {
         content: " (" attr(href) ")"; 
         font-size: 10pt; 
         color: gray; 
-    }*/
+    }
      
     /* Mantener imágenes importantes */
     img {

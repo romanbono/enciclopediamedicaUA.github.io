@@ -1,0 +1,42 @@
+:root {
+    /* Modo claro */
+    --color-fondo: #f4f4f4;
+    --color-texto: #2c3e50;
+    --color-fondo-claro: #ffffff;
+    --color-azul: #003366;
+    --color-sombra: rgba(0, 0, 0, 0.2);
+    --color-enlace: #003366;
+    --color-enlace-hover: #00509e;
+    --color-boton: #3498db;
+    --color-boton-hover: #00509e;
+    --color-borde-destacado: #e67e22;
+    --color-fondo-aside: #ecf0f1;
+
+    /* Modo noche */
+    --color-fondo-noche: #1e1e1e;
+    --color-texto-noche: #e0e0e0;
+    --color-fondo-claro-noche: #2c2c2c;
+    --color-azul-noche: #1a73e8;
+    --color-sombra-noche: rgba(0, 0, 0, 0.5);
+    --color-enlace-noche: #1a73e8;
+    --color-enlace-hover-noche: #4a90e2;
+    --color-boton-noche: #00509e;
+    --color-boton-hover-noche: #1a73e8;
+    --color-borde-destacado-noche: #e67e22;
+    --color-fondo-aside-noche: #2c2c2c;
+    --color-cita-texto-noche: #ddd;
+    --color-cita-fondo-noche: #000;
+
+    /* Alto Contraste */
+    --color-fondo-alto-contraste: #000000; /* Fondo negro */
+    --color-texto-alto-contraste: #FFFFFF; /* Texto blanco */
+    --color-fondo-claro-alto-contraste: #333333; /* Fondo gris oscuro */
+    --color-azul-alto-contraste: #FFD700; /* Amarillo dorado */
+    --color-sombra-alto-contraste: rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    --color-enlace-alto-contraste: #FFD700; /* Amarillo dorado */
+    --color-enlace-hover-alto-contraste: #FF4500; /* Naranja brillante */
+    --color-boton-alto-contraste: #00509e; /* Azul oscuro */
+    --color-boton-hover-alto-contraste: #FFD700; /* Amarillo brillante */
+    --color-borde-destacado-alto-contraste: #FF4500; /* Naranja fuerte */
+    --color-fondo-aside-alto-contraste: #333333; /* Fondo gris oscuro */
+}

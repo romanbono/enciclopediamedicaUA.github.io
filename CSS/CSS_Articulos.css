@@ -8,6 +8,11 @@ body {
     color: #333;
 }
 
+video{
+    margin: 20px;
+    margin-left: 18%;
+    margin-right: 18%;
+}
 /* Encabezados */
 h1, h2, h3 {
     color: #0056b3; /* Azul oscuro */

@@ -1,0 +1,34 @@
+AD: Aparece el título del vídeo "Parkinson" en la portada de este, donde también aparecen los nombres de los autores "Román Bono y Francisco Giménez", y un dibujo de una persona mayor con bastón.
+  
+Hola, somos Román Bono y Francisco Giménez, estudiantes de Ingeniería Biomédica en la Universidad de Alicante, y hoy vamos a hablar sobre una de las enfermedades neurológicas más comunes en el mundo: el Parkinson. Aunque solemos relacionarla con el temblor en las manos, es mucho más compleja de lo que parece.
+
+AD: Se muestra una diapositiva con el índice del contenido del video, 1 "¿Qué es el Parkinson?", 2 "Número de afectados", 3 "Síntomas", 4 "Tratamiento del paciente".
+
+Para ello, la explicación está estructurada en cuatro aspectos esenciales: ¿Qué es el Parkinson?, número de afectados, síntomas principales y tratamiento del paciente. 
+
+AD: Se cambia a otra diapositiva de título "¿Qué es el Parkinson?", incluye un retrato en blanco y negro de James Parkinson, y una lista de cuatro puntos: "Descubierta por James Parkinson (1817)", "Enfermedad crónica Neurodegenerativa", "Asociada a la dopamina" y "Enfermedad progresiva".
+
+En respuesta a la pregunta ¿Qué es el Parkinson?, se puede afirmar que se trata de una enfermedad neurodegenerativa crónica, además de progresiva, y que fue descubierta por James Parkinson, de ahí su nombre. El Parkinson afecta principalmente al sistema nervioso central. Esto ocurre porque las neuronas encargadas de producir dopamina, un químico esencial para el control de los movimientos, se van deteriorando en una parte del cerebro llamada sustancia negra.
+
+AD: Aparece una diapositiva con tres datos en diferentes recuadros, "10 millones en el mundo", "1,2 millones en Europa" y "160.000 en España". Además, aparece un dibujo de una persona mayor con bastón.
+
+A nivel global, se estima que más de 10 millones de personas viven con Parkinson. En Europa, la cifra supera el millón, y en España, alrededor de 160 mil personas padecen esta enfermedad. Estas cifras siguen aumentando a medida que la población envejece. Dicho esto, según datos recientes, la previsión de aumento en el diagnóstico de casos de Parkinson es considerable y se espera que para el año 2050 pueda llegar a duplicarse en España.
+
+Aún no se conocen exactamente las causas del Parkinson, aunque se cree que es el resultado de una combinación de factores genéticos y ambientales. 
+
+AD: Se muestra una diapositiva de título "Síntomas Principales", 1 "Problemas de coordinación y temblores", 2 "Alteraciones de la marcha y problemas de equilibrio", 3 "Trastornos del sueño y cambios en la expresión facial", 4 "Bradicinesia y rigidez muscular".
+
+Así, las personas con Parkinson experimentan síntomas como temblores, rigidez muscular y problemas de equilibrio.
+
+Vivir con Parkinson implica desafíos diarios. Muchas personas necesitan ayuda para realizar tareas cotidianas como vestirse, comer o caminar. A pesar de esto, hay quienes logran mantener una vida activa con el apoyo de sus familias y de terapias especializadas.
+
+AD: Aparece una diapositiva de título "Tratamiento recomendado". En ella dos apartados. A la izquierda, "Mejorar la calidad de vida", con una figura de un informe médico y el texto "Terapia física y ocupacional. movilidad e independencia". A la derecha, "Controlar los síntomas", con una figura de un blister y el texto "Medicamentos agonistas de dopamina, o la levodopa". 
+
+Lamentablemente, todavía no existe una cura, pero sí hay tratamientos que ayudan a controlar los síntomas. Entre estos se encuentran medicamentos que ayudan a reponer la dopamina o técnicas como la estimulación cerebral profunda en casos avanzados.
+
+Es fundamental aumentar la visibilidad de esta enfermedad y apoyar tanto la investigación como a las personas que viven con Parkinson. Cada año, el 11 de abril se celebra el Día Mundial del Parkinson, una oportunidad para aprender más sobre esta condición y mostrar nuestro apoyo.
+
+AD: Se muestra una nueva diapositiva de título "Contacto e Información". En ella dos apartados. A la izquierda, "Nuestro sitio web", con la URL "https://romanbono.github.io/enciclopediamedicaua.github.io/". A la derecha, "Emails de contacto", con las direcciones "gimenezdelatorre@gmail.com" y "bonoesteve@gmail.com".
+
+Si necesitas más información o quieres contactar con nosotros, no dudes en visitar nuestro sitio web o escríbenos a través de nuestros correos electrónicos: gimenezdelatorre@gmail.com y bonoesteve@gmail.com
+

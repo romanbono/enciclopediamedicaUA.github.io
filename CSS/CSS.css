@@ -107,6 +107,12 @@ aside {
     display: none;
 }
 
+iframe{
+    width:100%; 
+    height :800px ;
+    
+}
+
 /* maquetacion columnas si hay mas de 980px de resolucion */
 @media (min-width: 980px) {
     .columnas {

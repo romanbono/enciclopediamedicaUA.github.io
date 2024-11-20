@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto-Enciclopedia Medica Universidad de Alicante</title>
+    <link href="../CSS/EncabezadoYFooter.css" rel="stylesheet">
+    <link href= "../CSS/formularios.css" rel= "stylesheet">
+    <link href="../CSS/CSS.css" rel= "stylesheet">
+    <link href= "../CSS/fontawesome/css/all.min.css" rel= "stylesheet">
+</head>
+<body>
+	<header>
+		<a id = "skip" href ="#contenido">Saltar al contenido</a>
+		<a href = "../index.html" >
+			<img src= "../imagenes/logo.jpg" alt = "Inicio">
+			</a>
+		<a href= "../index.html"><h1>Enciclopedia Médica Universidad de Alicante</h1></a>	
+    </header>
+   <h2>Formulario de contacto de la Enciclopedia</h2>
+	<p>Estás en: 
+				<a href="../index.html">Página Principal</a> >
+				Soporte de contacto.
+	</p>
+      <p>El siguiente formulario sirve para que usted se ponga en contacto con nosotros y nos transmita aquello que desee. </p>
+      <h3>Intrucciones para el relleno de los campos.</h3>
+      <ol> 
+      <li>Los campos que son obligatorios, es decir, aquellos que debes completar para poder enviar el formulario vienen 
+      indicados con el símbolo del asterisco <strong>(*).</strong></li>
+      <li>En los campos que tengan un recuadro blanco, usted puede redactar texto relacionado
+       con lo que se pida en la etiqueta que aparece junto a ese recuadro.</li>
+      <li>Aquellos en los que el asterisco no aparezca son opcionales, usted decide si los desea rellenar.</li> 
+      <li>El campo del correo electrónico, en caso de rellenarlo, solo permitirá el envío del formulario si es completado con una 
+      dirección válida, con el <strong>@ </strong>característico de las direcciones de correo electrónico.</li>
+      <li>En los desplegables (Yo soy) o botones (sexo), usted seleccionará una única opción.</li>
+      <li>Para recibir más información, basta con hacer click en la casilla.</li>
+      </ol>
+    <form id= "contenido" action= "respuesta_form_contacto.html" method = "get">
+		
+		
+		<p> <label for="asunto">-Asunto <strong>*</strong></label>
+		<input type="text" name="asunto" id="asunto" required> </p>
+		
+		
+		
+		<p> <label for="comment">-Comentario o Pregunta <strong>*</strong><i class="fas fa-comment icono"></i></label><br>
+		<textarea id="comment" name="comment" required></textarea></p>
+		
+		
+		<p>
+			<label for="opciones">-Yo soy:</label>
+			<select name="opciones" id="opciones">
+				<option value="opcion1">Paciente</option>
+				<option value="opcion2">Científico</option>
+				<option value="opcion3">Médico</option>
+				<option value="opcion4">Educador</option>
+				<option value="opcion5">Fabricante</option>
+				<option value="opcion6">Periodista</option>
+			</select>
+		</p>
+		
+		<p> <label for="fecha">-Fecha de nacimiento </label>
+		<input type="date" name="fecha" id="fecha"> </p>
+		
+		<fieldset>
+			<legend>Sexo</legend>
+			<label for="hombre">Hombre</label><br>
+			<input class="radio" type="radio" id="hombre" name="sexo" value="hombre">
+			
+			<label for="mujer">Mujer</label><br>
+			<input class="radio" type="radio" id="mujer" name="sexo" value="mujer">
+			
+			<label for="otro">Otro</label><br>
+			<input class="radio" type="radio" id="otro" name="sexo" value="otro">
+			
+		</fieldset>
+		
+		<p> <label for="correo">-Correo electrónico<i class="fas fa-envelope icono"></i></label>
+		<input type="email" name="correo" id="correo"> </p>
+		
+		<p> <label for="info">Deseo recibir más información.</label>
+			<input class = "check" type="checkbox" id="info" name="info" value="info">
+		</p>
+		
+		<input class="boton" type="submit" value="Enviar">
+		<input class="boton" type="reset" value="Reiniciar">
+    </form>
+     <footer>
+		<p><em>&copy; Enciclopedia Médica. Derechos reservados.</em></p>
+		<address><em>Página realizada por <a href= "mailto:gimenezdelatorrequico@gmail.com">Francisco Giménez De La Torre</a>
+		 y <a href= "mailto:bonoesteve@gmail.com">Román Bono Esteve</a>.</em></address>
+	</footer>
+</body>
+</html>

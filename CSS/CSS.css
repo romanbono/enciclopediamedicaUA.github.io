@@ -14,8 +14,12 @@ body {
 main {
     margin: 20px;
 }
+:root {
+    --color-fondo-claro: #f9f9f9; /* Fondo más claro */
+    --color-azul-oscuro: #002a5a; /* Azul más oscuro */
+    --color-sombra: rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
 
-/* Navegación alfabética */
 nav {
     background-color: var(--color-fondo-claro);
     padding: 20px;
@@ -24,6 +28,7 @@ nav {
     box-shadow: 3px 3px 8px var(--color-sombra);
     margin-bottom: 20px;
 }
+
 
 /* Estilo de la cabecera de navegación */
 nav h2 {

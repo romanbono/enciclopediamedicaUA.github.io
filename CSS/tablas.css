@@ -47,8 +47,8 @@ thead, tfoot {
 }
 
 thead th, tfoot th, tfoot td {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); /* Efecto degradado en encabezados */
-  color: white; /* Texto blanco para los headers */
+  background-color: lightgray; 
+  color: rgb(14, 13, 13); 
 }
 
 /* Estilo cebra */

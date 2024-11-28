@@ -60,20 +60,26 @@
 		
 		<p> <label for="fecha">-Fecha de nacimiento </label>
 		<input type="date" name="fecha" id="fecha"> </p>
-		
+
 		<fieldset>
 			<legend>Sexo</legend>
-			<label for="hombre">Hombre</label><br>
-			<input class="radio" type="radio" id="hombre" name="sexo" value="hombre">
 			
-			<label for="mujer">Mujer</label><br>
-			<input class="radio" type="radio" id="mujer" name="sexo" value="mujer">
+			<div>
+			  <input class="radio" type="radio" id="hombre" name="sexo" value="hombre">
+			  <label for="hombre">Hombre</label>
+			</div>
 			
-			<label for="otro">Otro</label><br>
-			<input class="radio" type="radio" id="otro" name="sexo" value="otro">
+			<div>
+			  <input class="radio" type="radio" id="mujer" name="sexo" value="mujer">
+			  <label for="mujer">Mujer</label>
+			</div>
 			
-		</fieldset>
-		
+			<div>
+			  <input class="radio" type="radio" id="otro" name="sexo" value="otro" >
+			  <label for="otro">Otro</label>
+			</div>
+		  </fieldset>
+
 		<p> <label for="correo">-Correo electrónico<i class="fas fa-envelope icono"></i></label>
 		<input type="email" name="correo" id="correo"> </p>
 		
@@ -84,6 +90,29 @@
 		<input class="boton" type="submit" value="Enviar">
 		<input class="boton" type="reset" value="Reiniciar">
     </form>
+	<script>
+		const radios = document.querySelectorAll('.radio');
+	  
+		// Agregar evento para flechas arriba y abajo
+		radios.forEach((radio, index) => {
+		  radio.addEventListener('keydown', (event) => {
+			if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+			  event.preventDefault(); // Prevenir el comportamiento predeterminado
+	  
+			  // Determinar el siguiente índice
+			  const nextIndex =
+				event.key === 'ArrowDown'
+				  ? (index + 1) % radios.length // Siguiente opción
+				  : (index - 1 + radios.length) % radios.length; // Opción anterior
+	  
+			  // Mover el foco y seleccionar la nueva opción
+			  radios[nextIndex].focus();
+			  radios[nextIndex].checked = true;
+			}
+		  });
+		});
+	  </script>
+
 	<footer>
 		<p><em>&copy; Enciclopedia Médica. Derechos reservados.</em></p>
 		<address><em>Página realizada por <a href= "mailto:gimenezdelatorrequico@gmail.com">Francisco Giménez De La Torre</a>
